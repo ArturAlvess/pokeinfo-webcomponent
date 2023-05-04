@@ -1,0 +1,40 @@
+header{
+    height: 24.5vh;
+    width: 100vw;
+    background: linear-gradient(#6972B3, #a4b9e0)
+}
+.header-images{
+    display: flex;
+    justify-content: space-between;
+}
+.poke-img{
+    height: 40vh;
+}
+.input-logo{
+    height: 20vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "logo"
+    "input";
+    gap: 2vh;
+    padding-top: 2vh;
+}
+.logo-img{
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+    height: 10vh;
+}
+.input-pokemon{
+    grid-area: input;
+    align-self: center;
+    justify-self: center;
+    height: 40%;
+    width: 15vw;
+    border-radius: 10px;
+}
+#placeholder-poke::placeholder{
+    font-family: 'Work Sans', 'sans-serif';
+    font-style: bold;
+}

@@ -3,6 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+}
+span{
+    font-family: 'Inter';
+    font-style: bold;
+}
 body{
     background-image: url('../img/background-stats.png');
 }

@@ -7,6 +7,13 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.container-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
 .info{
     display: grid;
     grid-template-rows: 30% 30% 30%;
@@ -21,6 +28,15 @@ main{
     background-color: #EF3E38;
     border: 3px solid black;
 }
+/* container do html pokedex: */
+.container-pokedex{
+    z-index: -1;
+    background-image: url('../../img/pokedex-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
 .pokedex-icon{
     grid-area: icon;
     height: 20vh;
@@ -50,4 +66,56 @@ main{
 .pokebola-icon:hover{
     transform: scale(1.1);
     transition: .7s;
+}
+
+/*  POKEDEX HTML    */
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 70%;
+    background-color: rgba(114, 109, 109, 0.712);
+    flex-wrap: wrap;
+    border-radius: 15px;
+    border: 2px solid black;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    background-color: gray;
+    width: 8px;
+}
+.pokemons-container{
+    display: flex;
+    flex-direction: column;
+    height: 18vh;
+    width: 6.5vw;
+    background-color: rgb(177, 167, 167);
+    border-radius: 10px;
+    margin: 10px;
+    border: 3px solid black;
+    padding-bottom: 1%;
+    transition: all .5s;
+}
+
+.pokemons-container:hover{
+    transform: scale(1.1);
+}
+.pokeimage{
+    height: 80%;
+    width: 75%;
+    align-self: center;
+    justify-content: start;
+}
+.pokename{
+    align-self: center;
+    font-family: 'Inter';
+    color: #ffffff;
+}
+.poketype{
+    align-self: center;
+    font-family: 'Lato';
+    color: #ffffff;
 }

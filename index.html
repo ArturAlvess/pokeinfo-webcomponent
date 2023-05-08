@@ -10,11 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main/main.css">
     <link rel="stylesheet" href="./css/header/header.css">
     <link rel="stylesheet" href="./css/reset/reset.css">
     <link rel="stylesheet" href="./css/style/style.css">
     <link rel="icon" href="./favicon/favicon-16x16.png">
+    <script src="./js/app.js" defer type="module"></script>
     <title>PokeInfo</title>
 </head>
 
@@ -32,15 +37,20 @@
         </div>
     </header>
     <div class="line"></div>
-    <main>
-        <div class="info">
-            <img class="pokedex-icon" src="./img/pokedex-icon.png" alt="Imagem de uma pokedéx">
-            <div class="text-info">
-                <p class="description">Veja todas as informações do seu pokémon favorito.</p>
-            </div>
-            <img class="pokebola-icon" src="./img/pokebola.png" alt="Imagem de uma pokebola">
 
+    <main id="root">
+        <div class="container-menu">
+            <div class="info">
+                <img class="pokedex-icon" src="./img/pokedex-icon.png" alt="Imagem de uma pokedéx">
+                <div class="text-info">
+                    <p class="description">Veja todas as informações do seu pokémon favorito.</p>
+                </div>
+                <img class="pokebola-icon" src="./img/pokebola.png" alt="Imagem de uma pokebola"></img>
+                
+            </div>
+            <a href="/pokedex" onclick="route()">TESTE</a>
         </div>
+        
     </main>
 
 </body>

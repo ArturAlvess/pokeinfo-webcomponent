@@ -2,13 +2,17 @@ header{
     height: 24.5vh;
     width: 100vw;
     background: linear-gradient(#6972B3, #a4b9e0)
+    
+    
 }
 .header-images{
     display: flex;
     justify-content: space-between;
+   
 }
 .poke-img{
     height: 40vh;
+    z-index: 1;
 }
 .input-logo{
     height: 20vh;
@@ -24,7 +28,7 @@ header{
 .button-pokemon{
     justify-self: center;
     width: 30%;
-    font-family: 'Work Sans';
+    font-family: 'Press Start 2P';
     font-weight: 800;
     font-size:clamp(4px, 3vw, 15px);
     border-radius: 10px;

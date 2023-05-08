@@ -16,6 +16,9 @@ const pokemonType = document.querySelector('.type-name')
 const pokemonType2 = document.querySelector('.type-name2')
 const form = document.querySelector('.form');
 const input = document.querySelector('.input-search');
+
+
+
 // -----------------------------------------------------------------
 
 const getPokemon = async (pokemon) => {
@@ -33,6 +36,7 @@ const renderPokemon = async (pokemon) => {
 
     pokemonName.innerHTML = 'Loading...';
     pokemonNumber.innerHTML = '';
+    pokemonType2.innerHTML = '--/--'
 
     const data = await getPokemon(pokemon)
 
@@ -53,9 +57,9 @@ const renderPokemon = async (pokemon) => {
 
         pokemonType.innerHTML = data.types[0].type.name.toUpperCase();
         pokemonType2.innerHTML = data.types[1].type.name.toUpperCase();
-        
+
         input.value = ''
-    } else{
+    } else {
         pokemonName.innerHTML = 'Not found :(';
         pokemonNumber.innerHTML = '??';
         pokemonGif.src = './img/pokebola.gif'
@@ -71,6 +75,7 @@ const renderPokemon = async (pokemon) => {
         pokemonType.innerHTML = 'NOT'
         pokemonType2.innerHTML = 'FOUND'
     }
+
 
 
 }

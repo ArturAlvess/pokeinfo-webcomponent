@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/api.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Pokedéx</title>
@@ -14,47 +16,71 @@
 
 <body>
     <main>
-        <span class="title">STATS</span>
+        <h1 class="pokemon-data">
+            <span class="pokemon__name">Nome</span> - 
+            <span class="pokemon__number">ID</span>
+        </h1>
+       <form class="form">
+        <input
+        type="search"
+        class="input-search"
+        placeholder="Name or Number"
+        required
+    />
+       </form>
+        
         <div class="stats-panel">
             
             <div class="pokemon-panel">
                 <div class="panel-image">
-                    <img class="pokemon-image" src="./img/poke-photo.png" alt="Foto do pokémon">
+                    <img class="pokemon__image" src="#" alt="Foto do pokémon"/>
                 </div>
 
                 
             </div>
 
             <div class="pokemon-type">
-                <span class="type-name">GHOST</span>
+                <span class="type-name"></span>
             </div>
             <div class="pokemon-type2">
-                <span class="type-name">POISON</span>
+                <span class="type-name2"></span>
             </div>
 
             <div class="attributes-panel">
                 <ul class="ul-stats">
                     <li class="stats-column">
                         <div class="base-stats">
-                            <span>HP:</span>
+                            <span>HP:
+                                <p class="hp-stats"></p>
+                            </span>
                         </div>
                         <div class="base-stats">
-                            <span>DEF:</span>
+                            <span>DEFF:
+                                <p class=" deff-stats"></p>
+                            </span>
                         </div>
                         <div class="base-stats">
-                            <span>SP-ATT:</span>
+                            <span>SP-ATT:
+                                <p class="sp-att-stats"></p>
+                            </span>
                         </div>
                     </li>
                     
                     <li class="stats-column">
                         <div class="base-stats2">
-                            <span>ATT:</span>
+                            <span>ATT:
+                                <p class="att-stats"></p>
+                            </span>
                         </div>
                         <div class="base-stats2">
-                            <span>SPEED:</span>
+                            <span>SPEED:
+                                <p class="speed-stats"></p>
+                            </span>
                         </div>
                         <div class="base-stats2">
-                            <span>SP-DEFF:</span>
+                            <span>SP-DEFF:
+                                <p class="sp-deff-stats"></p>
+                            </span>
                         </div>
                     </li>
 

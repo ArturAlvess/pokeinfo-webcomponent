@@ -11,7 +11,7 @@ li{
 }
 span{
     font-family: 'Inter';
-    font-style: bold;
+    font-weight: 500;
 }
 body{
     background-image: url('../img/background-stats.png');

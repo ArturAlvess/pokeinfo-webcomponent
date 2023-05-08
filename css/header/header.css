@@ -12,6 +12,7 @@ header{
 }
 .input-logo{
     height: 20vh;
+    width: 30vw;
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-areas: 
@@ -20,6 +21,24 @@ header{
     gap: 2vh;
     padding-top: 2vh;
 }
+.button-pokemon{
+    justify-self: center;
+    width: 30%;
+    font-family: 'Work Sans';
+    font-weight: 800;
+    font-size:clamp(4px, 3vw, 15px);
+    border-radius: 10px;
+    color: #222;
+    background-color: #d3d0cb;
+    box-shadow: -2px 3px 0 #222;
+    transition: all .7s;
+}
+.button-pokemon:hover{
+    background-color: #ec5151;
+    color: #fff;
+    transform: scale(1.1);
+}
+
 .logo-img{
     grid-area: logo;
     align-self: center;

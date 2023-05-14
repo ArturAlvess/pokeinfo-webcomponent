@@ -7,6 +7,23 @@ main{
     width: 100vw;
     gap: 5px;
 }
+.button-leave{
+    display: flex;
+    flex-direction: column;
+    height: 5%;
+    align-self: flex-start;
+    background-color: #ff181863;
+    border-color: #33333300;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+.button-leave:hover{
+    transform: scale(1.2);
+    transition: .7s;
+}
+.icon-close{
+    height: 100%;
+}
 .pokemon-data{
     font-size: 2rem;
     font-weight: 200;
@@ -152,55 +169,50 @@ main{
     height: 10%;
 }
 
+/****************** RESPONSIVE *************************/
 
+@media(max-width: 640px){
+    .stats-panel{
+        width: 90vw;
+        height: 65vh;
+    }
+    .pokemon__image{
+        height: 25vh;
+        width: 35vw;
+        top: 35%;
+    }
+    .form{
+        width: 45vw;
+    }
+    .base-stats{
+        height: 20%;
+        width: 88%;
 
-/* CRIANDO CORES */
+    }
+    .base-stats2{
+        height: 20%;
+        width: 90%;
 
-.fire{
-    color: #e09c74;
-}
-.water{
-    color: #acddf3;
-}
-
-.grass{
- color: #DEFDE0;
-} 
-.electric{
-    color: #FCF7DE;
-} 
-.water{
-    color: blue;
-}
-.ground{
- color: #f4e7da;
-}
-.rock{
-    color: #d5d5d4;
-} 
-.fairy{
-    color: #fceaff;
-} 
-.poison{
-    color: #98d7a5;
-} 
-.bug{
-    color: #f8d5a3;
-}
-.dragon{
-    color: #97b3e6;
-}
-.psychic{
-    color: #eaeda1;
-}
-.flying{
-    color: #F5F5F5;
-}
-.fighting{
-    color: #E6E0D4;
-}
-.normal{
-    color: #F5F5F5;
+    }
+    .attributes{
+        font-size: .7rem;
+    }
+    .pokemon-type{
+        width: 40%;
+        margin-right: 20vw;
+    }
+    .pokemon-type2{
+        width: 40%;
+        
+    }
+    .type-name{
+        padding-top: 1vh;
+        font-size: .8rem;
+    }
+    .type-name2{
+        padding-top: 1vh;
+        font-size: .8rem;
+    }
 }
 
 

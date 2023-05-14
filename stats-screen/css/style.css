@@ -16,3 +16,8 @@ span{
 body{
     background-image: url('../img/background-stats.png');
 }
+@media(max-width: 640px){
+    li{
+        gap: 8%;
+    }
+}

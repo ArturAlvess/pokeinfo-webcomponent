@@ -25,7 +25,11 @@ header{
     gap: 2vh;
     padding-top: 2vh;
 }
-.button-pokemon{
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bttn{
     justify-self: center;
     width: 30%;
     font-family: 'Press Start 2P';
@@ -37,7 +41,8 @@ header{
     box-shadow: -2px 3px 0 #222;
     transition: all .7s;
 }
-.button-pokemon:hover{
+
+.bttn:hover{
     background-color: #ec5151;
     color: #fff;
     transform: scale(1.1);
@@ -48,6 +53,7 @@ header{
     align-self: center;
     justify-self: center;
     height: 10vh;
+    cursor: pointer;
 }
 .input-pokemon{
     grid-area: input;
@@ -60,4 +66,16 @@ header{
 #placeholder-poke::placeholder{
     font-family: 'Work Sans', 'sans-serif';
     font-style: bold;
+}
+@media(max-width:640px){
+    .header-images{
+        width: 90vw;
+    }
+    .input-logo{
+        width: 91vw;
+        margin-left: 7vw;
+    }
+    .poke-img{
+        display: none;
+    }
 }

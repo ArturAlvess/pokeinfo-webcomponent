@@ -55,6 +55,7 @@ const renderPokemon = async (pokemon) => {
         pokemonGif.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${data.id}.gif`
         pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`
 
+
         pokemonType.innerHTML = data.types[0].type.name.toUpperCase();
         pokemonType2.innerHTML = data.types[1].type.name.toUpperCase();
 

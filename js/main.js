@@ -92,7 +92,7 @@ buttonList()
 const exit = () => {
     const buttonSair = document.querySelector('.logo-img')
     buttonSair.onclick = function () {
-        window.location.href = '/'
+        window.location.href = './index.html'
     }
 }
 exit();
